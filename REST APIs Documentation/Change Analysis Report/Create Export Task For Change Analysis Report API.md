@@ -3,7 +3,7 @@
 
 ## ***POST*** /V1/ChangeAnalysis/Export/Tasks
 This API is used to create a task to export the change analysis report. 
-> **Note:** : 8.03 latest patch is required.
+
 ## Detail Information
 
 > **Title** : Create Export Task For Change Analysis Report API    <br>

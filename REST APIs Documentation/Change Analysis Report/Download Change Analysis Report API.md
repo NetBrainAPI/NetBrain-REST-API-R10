@@ -3,7 +3,7 @@
 
 ## ***GET*** V1/ChangeAnalysis/Export/Tasks/{taskId}/Download
 This API is used to download the change analysis report with a given taskID. 
-> **Note:** : 8.03 latest patch is required.
+
 ## Detail Information
 
 > **Title** : Download Change Analysis Report API   <br>

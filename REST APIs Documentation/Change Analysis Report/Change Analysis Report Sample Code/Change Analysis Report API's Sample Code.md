@@ -1,12 +1,12 @@
 # Change Analysis Report API Design -- change analysis report API's sample code
 
 This sample code includes create export task API, check export task status API and export change analysis report API. 
-> **Note:** : 8.03 latest patch is required.
+
 ## Detail Information
 
 > **Title** : Change Analysis Report API's Sample Code   <br>
 
-> **Version** : 10/14/2020.
+> **Version** : 3/26/2021.
 
 # Full Example:
 
