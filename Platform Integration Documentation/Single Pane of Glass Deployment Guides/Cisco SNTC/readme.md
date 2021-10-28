@@ -38,7 +38,7 @@ Application Version
 
 | Application                 | Version                   |
 |-----------------------------|---------------------------|
-| NetBrain Integrated Edition | IEv8.0 (or newer)         |
+| NetBrain Integrated Edition | IEv8.x, IEv10.0       |
 
 Network Connectivity
 --------------------
@@ -54,6 +54,15 @@ User Account and Privileges
 |-----------------------------|--------------|-----------------------------|
 | NetBrain Integrated Edition | Required     | System Admin                |
 | SNTC service                  | Required     | Client           |
+
+Cisco SNTC Details
+--------------------
+1. To create Cisco SNTC service account, follow instructions here
+https://developer.cisco.com/docs/support-apis/#application-registration
+2. This integration queries 2 Cisco API endpoints:
+
+    - To get access-token https://developer.cisco.com/docs/support-apis/#!authentication/authentication
+    - To get EOX information https://developer.cisco.com/docs/support-apis/#!eox/get-eox-by-serial-numbers
 
 Deployment Instructions
 =======================
@@ -112,7 +121,7 @@ repeat this section for each of the Front Servers.
 
 >   **API Source Type:** *“Cisco SNTC API Adaptor”*
 
->   **Endpoint:** *Cisco SNTC instance endpoint (ex “http://192.168.31.99”)*
+>   **Endpoint:** *Cisco SNTC EOX Data retriving endpoint (“https://api.cisco.com/supporttools/eox/rest/5/EOXBySerialNumber/1/”)*
 
 >   **Username:** *Cisco SNTC guest account’s username*
 
@@ -187,18 +196,16 @@ repeat this section for each of the Front Servers.
 
 >   *Cisco SNTC – Device DVT*
 
-1.  Double-click *Cisco SNTC – Device DVT* to open the custom parser in the
+1.  Double-click *Cisco SNTC Parser* to open the custom parser in the
     *Parser Editor*.
 
 2.  In the *Parser Editor*, update the *Parser Type* associated with the
-    *Cisco SNTC – Device DVT* to the following:
+    *Cisco SNTC Parser* to the following:
 
 >   **Parser Type:** *API, Cisco SNTC*
 
 1.  Click the Save icon in the upper-right corner of the screen, then close the
     browser tab.
-
-2.  Repeat steps 13-15 for the remaining two NetBrain Cisco SNTC parsers.
 
 Creating Cisco SNTC Enabled Device Groups
 -----------------------------------------
